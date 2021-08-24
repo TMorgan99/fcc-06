@@ -1,5 +1,5 @@
 {
-  "name": "3-build-with-ssg",
+  "name": "06-jamstack-demo",
   "version": "1.0.0",
   "description": "",
   "main": "vibe.js",
@@ -8,11 +8,11 @@
     "start": "eleventy --serve"
   },
   "keywords": [],
-  "author": "Phil Hawksworth <phil@netlify.com>",
+  "author": "Tim Morgan <TMorgan99@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0"
+    "@11ty/eleventy": "^0.12.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
   }
 }

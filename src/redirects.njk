@@ -1,11 +1,12 @@
 ---
 permalink: _redirects
+default: ca
 ---
 
-/   /fr/index.html   200   Language=fr
+/   /fr/index.html 200   Language=fr
 
 {%- for item in news %}
 /   /{{item.country}}/index.html 200   Country={{item.country}}
 {%- endfor %}
 
-/   /gb/index.html  404
+/   /{{ default }}/index.html 404

@@ -1,6 +1,5 @@
 
-function success(pos) {
-
+const success = (pos) => {
 
   const url = `/.netlify/functions/weatherapi?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric`;
 
@@ -21,11 +20,11 @@ function success(pos) {
 
 }
 
-function error(err) {
+const error = (err) => {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
-if(navigator.geolocation) {
+if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success, error);
 }
 

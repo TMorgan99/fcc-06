@@ -1,9 +1,9 @@
-module.exports = function(config) {
+module.exports = (config) => {
 
   config.setBrowserSyncConfig({
     https: {
-      key: '/etc/localhost.key',
-      cert: '/etc/localhost.crt'
+      key: './localhost.key',
+      cert: './localhost.crt'
     }
   });
 
